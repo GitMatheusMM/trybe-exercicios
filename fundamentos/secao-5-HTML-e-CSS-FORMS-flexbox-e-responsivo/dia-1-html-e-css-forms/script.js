@@ -8,3 +8,11 @@ const hrefLink = document.querySelector("#href");
 //   event.preventDefault();
 //  });
 // }
+
+inputText.addEventListener('keypress', (event) => {
+  const keyPressed = event.key;
+
+  if(keyPressed !== 'a'){
+    event.preventDefault();
+  }
+});
