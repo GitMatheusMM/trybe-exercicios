@@ -18,13 +18,29 @@
 
 //Array.find()
 
-const games = [
-  { id: 1, title: 'Counter-Strike: Global Offensive', genre: 'FPS' },
-  { id: 2, title: 'Dota 2', genre: 'MOBA' },
-  { id: 3, title: 'Half-Life 2', genre: 'FPS' },
-  { id: 4, title: 'Portal 2', genre: 'Puzzle' },
+// const games = [
+//   { id: 1, title: 'Counter-Strike: Global Offensive', genre: 'FPS' },
+//   { id: 2, title: 'Dota 2', genre: 'MOBA' },
+//   { id: 3, title: 'Half-Life 2', genre: 'FPS' },
+//   { id: 4, title: 'Portal 2', genre: 'Puzzle' },
+// ];
+
+// const findGame = games.find((game) => game.title === 'Portal 2');
+
+// console.log(findGame);
+
+
+// array.forEach() 
+
+const series = [
+  { title: 'Stranger Things', genre: 'Sci-Fi', rating: 8.8 },
+  { title: 'Narcos', genre: 'Crime', rating: 8.8 },
+  { title: 'The Crown', genre: 'Drama', rating: 8.7 },
+  { title: 'Black Mirror', genre: 'Sci-Fi', rating: 8.8 },
 ];
 
-const findGame = games.find((game) => game.title === 'Portal 2');
+//mostrar todas séries
 
-console.log(findGame);
+series.forEach((serie) => {
+  console.log(`${serie.title} do gênero ${serie.genre} com a nota ${serie.rating}`);
+});
