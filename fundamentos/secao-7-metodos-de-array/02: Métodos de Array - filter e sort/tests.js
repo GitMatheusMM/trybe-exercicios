@@ -97,7 +97,12 @@
 
 
 // I DONT UNDERSTAND CRAP THATS IS HAPPENING IN THIS array.sort()
-const numbers = [5, 2, 10, 1, 8, 23, 4, 3, 1789];
-numbers.sort((a, b) => b - a);
+// const numbers = [5, 2, 10, 1, 8, 23, 4, 3, 1789];
+// numbers.sort((a, b) => b - a);
 
-console.log(numbers);
+// console.log(numbers);
+
+
+const testN = [2, 5, 9, -11, 35, -72, 90];
+testN.sort((a, b) => a - b);
+console.log(testN);
