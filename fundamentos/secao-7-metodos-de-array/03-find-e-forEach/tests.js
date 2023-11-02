@@ -42,5 +42,27 @@ const series = [
 //mostrar todas séries
 
 series.forEach((serie) => {
-  console.log(`${serie.title} do gênero ${serie.genre} com a nota ${serie.rating}`);
+  // console.log(`${serie.title} do gênero ${serie.genre} com a nota ${serie.rating}`);
 });
+
+// rest paramêter
+
+const countParams = (...args) => {
+  console.log('parâmetros:', args);
+  return `Você passou ${args.length} parâmetros para a função.`;
+};
+
+console.log(countParams('', 2, 3, {}, null, [0,1,2,'asd']));
+
+const calcTotal = (...numbers) => {
+  let total = 0;
+
+  numbers.forEach((number) => {
+    total += number;
+  });
+
+  return total;
+};
+
+console.log(calcTotal(10, 20, 30)); // 60
+console.log(calcTotal(756, 2, 3000, 23)); // 3781
